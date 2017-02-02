@@ -1,0 +1,10 @@
+﻿
+
+
+==============================  ApplicationDbContext =============================
+
+Enable-Migrations -ContextTypeName ApplicationDbContext -MigrationsDirectory Migrations\Identity
+
+add-migration -ConfigurationTypeName Lab03Canada.Migrations.Identity.Configuration 
+
+update-database -ConfigurationTypeName Lab03Canada.Migrations.Identity.Configuration
